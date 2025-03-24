@@ -1,0 +1,6 @@
+
+
+
+class JSHelper {
+  void demoMethod() {}
+}
