@@ -1,11 +1,11 @@
 import 'dart:js_interop';
 
 @JS('demoMethod')
-external void _demoMethod();
+external void _demoMethod(String message);
 
 @JSExport()
 class JSHelper {
- void demoMethod() {
-   _demoMethod();
+ void demoMethod(String message) {
+   _demoMethod(message);
  }
 }

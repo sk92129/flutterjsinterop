@@ -1,4 +1,4 @@
-function demoMethod( )
+function demoMethod(message )
 {
-    console.log("hello Sean");
+    console.log(message);
 }

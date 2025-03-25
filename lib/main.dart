@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: ElevatedButton(
             onPressed: () {
-              JSHelper().demoMethod();
+              JSHelper().demoMethod("Hello World");
             },
             child: const Text('Run JS'),
           ),

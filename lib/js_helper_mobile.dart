@@ -2,5 +2,5 @@
 
 
 class JSHelper {
-  void demoMethod() {}
+  void demoMethod(String message) {}
 }
