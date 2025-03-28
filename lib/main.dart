@@ -9,6 +9,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+
+  void displayResult() {
+    print("display from callback");
+  }
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
