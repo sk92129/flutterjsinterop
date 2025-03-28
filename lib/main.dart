@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jsinteropsample/js_helper.dart';
+import 'package:jsinteropsample/my_web_widget.dart';
 
 
 void main() {
@@ -26,12 +27,13 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const  Text("JS Interop")),
         body: Center(
-          child: ElevatedButton(
-            onPressed: () {
-              JSHelper().demoMethod("Hello World");
-            },
-            child: const Text('Run JS'),
-          ),
+          child: MyWebWidget(),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            JSHelper().demoMethod("Hello from Flutter!");
+          },
+          child: const Icon(Icons.add),
         ),
       )
     );
